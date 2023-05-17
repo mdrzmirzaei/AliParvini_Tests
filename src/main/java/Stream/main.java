@@ -6,6 +6,8 @@ public class main {
         f.setItems();
         f.printItems();
 
-
+findWithStream ff=new findWithStream();
+ff.setItems();
+ff.printItems();
     }
 }

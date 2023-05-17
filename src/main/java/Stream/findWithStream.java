@@ -19,12 +19,18 @@ public class findWithStream {
 
 
     public void printItems() {
-
         System.out.println("pls enter your age : ");
         Scanner scanner = new Scanner(System.in);
         int age;
         age = scanner.nextInt();
         scanner.nextLine();
+
+
+        List<Object> objlist= Myobj.stream().filter(mo->mo.getAge()>age).collect(Collectors.toList());
+        for (int i = 1; i < objlist.size(); i++) {
+            System.out.println(objlist.get(i).getName()+objlist.get(i).getAge());
+
+        }
 
 
 
