@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="ORM_Test.Customer" table="customer">
+        <id column="idCustomer" name="id"/>
+        <property column="Customer_name" name="name" type = "java.lang.String"/>
+        <property column="Customer_family" name="family" type = "java.lang.String"/>
+        <property column="Customer_address" name="address" type = "java.lang.String"/>
+    </class>
+</hibernate-mapping>
